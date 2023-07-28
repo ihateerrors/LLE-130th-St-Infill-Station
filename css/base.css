@@ -530,9 +530,16 @@ h6 {
 }
 /* Layout */
 .topbar {
-  background-color: #d9d9d9;
+  background-color: #5a5a5a;
 }
-
+.st-logo {
+  width: 200px;
+  margin-bottom: 3px;
+}
+.language-links-header {
+  color:#ffff !important;
+  text-decoration: none;
+}
 .topbar span {
   color: #2b376e;
 }
