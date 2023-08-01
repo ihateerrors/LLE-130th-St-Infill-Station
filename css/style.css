@@ -147,13 +147,21 @@ h3 {
   scroll-margin-top: 200px;
   font-size: 24px;
   font-style: italic;
+  
+  
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.accordion.active,
+.accordion.active {
+  border-bottom: none;
+  border-bottom-width: none;
+  background-color: rgb(255, 255, 255);
+  color: #2a7897;
+}
 .accordion:hover {
   background-color: rgb(255, 255, 255);
   color: #2a7897;
+  
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -166,17 +174,21 @@ h3 {
 }
 
 .accordion:after {
-  content: "\02795";
+  content: "+";
   /* Unicode character for "plus" sign (+) */
-  font-size: 18px;
-  color: rgb(255, 255, 255);
+  font-size: 28px;
   float: right;
   margin-left: 5px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .accordion.active:after {
-  content: "\2796";
+  content: "-";
   /* Unicode character for "minus" sign (-) */
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 p {
@@ -255,6 +267,7 @@ p {
 }
 
 .thr {
+  border-color: #2a7897 !important;
   width: 100%;
   text-align: left;
   border-top: dashed;
