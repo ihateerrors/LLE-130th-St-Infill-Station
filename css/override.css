@@ -264,16 +264,33 @@ a.dropdown-item.active {
   color: inherit;
   position: static;
   padding-top: 0;
+  color: white;
+  background-color: var(--wave-green);
+  padding: 1em;
 }
 
-.lift-text {
-  position: relative;
-  top: -2rem;
+.carousel-icon {
+  background-color: var(--railway-gray);
+  position: absolute;
+  top: 20rem;
+  padding: 1em .5em;
+}
+.carousel-cap-header {
+  margin-top: 0;
 }
 
-[for="sgE-7462204-1-5-element"] {
-  max-width: 100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .footer-form {
