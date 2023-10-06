@@ -15,6 +15,9 @@
 ul.no-style {
   list-style: none;
 }
+ul.no-gap li {
+  margin-bottom: 0;
+}
 
 li {
   font-size: 1.955rem;
@@ -309,7 +312,7 @@ blockquote footer:before {
 blockquote:nth-of-type(even) {
   text-align: right;
   border-left: none;
-  border-right: 5px solid #999;
+  border-right: 5px solid var(--dark-teal);
 }
 blockquote:nth-of-type(even) footer {
   text-align: right;
