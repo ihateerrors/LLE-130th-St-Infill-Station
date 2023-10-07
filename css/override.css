@@ -330,7 +330,9 @@ blockquote:nth-of-type(even) footer:after {
   blockquote:nth-of-type(even) {
     padding: 1em 1em 1em 20%;
   }
-
+.scroll-margin {
+  scroll-margin-top: 40px;
+}
 
 
 

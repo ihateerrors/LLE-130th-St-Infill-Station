@@ -32,8 +32,8 @@ function onScroll(event) {
     var currLink = jQuery(this);
     var refElement = jQuery(currLink.attr("href"));
     if (
-      refElement.offset().top - 200 <= scrollPos &&
-      refElement.offset().top + refElement.height() > scrollPos
+      refElement.offset().top - 100 <= scrollPos &&
+      refElement.offset().top - 100 + refElement.height() > scrollPos
     ) {
       jQuery("#menu-center ul li a").removeClass("active");
       currLink.addClass("active");
@@ -43,20 +43,20 @@ function onScroll(event) {
   });
 }
 
-jQuery(".tab-row a").each(function () {
-  jQuery(this).on("click", function (event) {
-    event.preventDefault();
-    var currentId = jQuery(this).attr("href");
-    setTimeout(() => {
-      jQuery("html, body").animate(
-        {
-          scrollTop: jQuery(currentId).offset().top - 50,
-        },
-        0
-      );
-    }, 0);
-  });
-});
+// jQuery(".tab-row a").each(function () {
+//   jQuery(this).on("click", function (event) {
+//     event.preventDefault();
+//     var currentId = jQuery(this).attr("href");
+//     setTimeout(() => {
+//       jQuery("html, body").animate(
+//         {
+//           scrollTop: jQuery(currentId).offset().top - 50,
+//         },
+//         0
+//       );
+//     }, 0);
+//   });
+// });
 
 $(window).scroll(function () {
   var s = $(window).scrollTop(),
