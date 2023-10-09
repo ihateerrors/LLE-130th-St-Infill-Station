@@ -43,20 +43,20 @@ function onScroll(event) {
   });
 }
 
-// jQuery(".tab-row a").each(function () {
-//   jQuery(this).on("click", function (event) {
-//     event.preventDefault();
-//     var currentId = jQuery(this).attr("href");
-//     setTimeout(() => {
-//       jQuery("html, body").animate(
-//         {
-//           scrollTop: jQuery(currentId).offset().top - 50,
-//         },
-//         0
-//       );
-//     }, 0);
-//   });
-// });
+jQuery(".tab-row a").each(function () {
+  jQuery(this).on("click", function (event) {
+    event.preventDefault();
+    var currentId = jQuery(this).attr("href");
+    setTimeout(() => {
+      jQuery("html, body").animate(
+        {
+          scrollTop: jQuery(currentId).offset().top - 50,
+        },
+        0
+      );
+    }, 0);
+  });
+});
 
 $(window).scroll(function () {
   var s = $(window).scrollTop(),
