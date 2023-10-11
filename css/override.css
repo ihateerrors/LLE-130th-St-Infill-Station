@@ -181,6 +181,16 @@ a.pbutton,
   text-decoration: none;
   border-color: #ffffff;
 }
+
+.btn.pbutton {
+  color: #ffffff;
+  background: var(--line-pink);
+}
+.btn.pbutton:hover {
+  color: var(--line-pink);
+  background: #fff;
+  border: 2px solid var(--line-pink);
+}
 #sg_SubmitButton {
   margin-right: 18px !important;
 }
