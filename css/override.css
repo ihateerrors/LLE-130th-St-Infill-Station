@@ -345,6 +345,7 @@ blockquote:nth-of-type(even) footer:after {
 }
 .skip-nav-link {
   position: absolute;
+  left: 1rem;
   transform: translateY(-120%);
   transition: transform 325ms ease-in;
 }
