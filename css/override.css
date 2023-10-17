@@ -198,6 +198,9 @@ a.pbutton,
 .survey {
   border-radius: 5px;
 }
+.sticky-top {
+  top: -1px;
+}
 
 .story-card * {
   max-height: 600px !important;
